@@ -6,145 +6,228 @@
 <title>Seongkyu Choi</title>
 
 <style>
-body{
-    font-family: Arial, sans-serif;
-    max-width: 1000px;
-    margin: auto;
-    padding: 40px;
-    line-height: 1.6;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 30px;
+    color: #111;
+    line-height: 1.55;
 }
 
-.header{
-    display:flex;
-    align-items:center;
-    gap:30px;
+a {
+    color: #1772d0;
+    text-decoration: none;
 }
 
-.profile{
-    width:180px;
-    border-radius:50%;
+a:hover {
+    text-decoration: underline;
 }
 
-h1{
-    margin-bottom:5px;
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    margin-bottom: 45px;
 }
 
-.section{
-    margin-top:50px;
+.profile-text {
+    flex: 1;
 }
 
-.paper{
-    margin-bottom:20px;
+.profile-text h1 {
+    font-size: 48px;
+    font-weight: 500;
+    margin: 0 0 25px 0;
+    text-align: center;
 }
 
-a{
-    text-decoration:none;
-    color:#0066cc;
+.profile-text p {
+    font-size: 19px;
+    margin: 18px 0;
 }
 
-a:hover{
-    text-decoration:underline;
+.profile-photo {
+    width: 300px;
+    text-align: center;
+}
+
+.profile-photo img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.links {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 28px;
+}
+
+.section {
+    margin-top: 45px;
+}
+
+.section h2 {
+    font-size: 26px;
+    font-weight: 500;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 6px;
+}
+
+.pub, .project {
+    margin: 22px 0;
+}
+
+.pub-title, .project-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.venue {
+    font-style: italic;
+}
+
+.footer {
+    margin-top: 60px;
+    text-align: right;
+    font-size: 13px;
+    color: #666;
+}
+
+@media (max-width: 750px) {
+    .profile {
+        flex-direction: column-reverse;
+        text-align: left;
+    }
+
+    .profile-photo {
+        width: 230px;
+    }
+
+    .profile-text h1 {
+        font-size: 38px;
+    }
 }
 </style>
-
 </head>
 
 <body>
 
-<div class="header">
+<div class="profile">
 
-<img src="profile.png" class="profile">
+    <div class="profile-text">
+        <h1>Seongkyu Choi</h1>
 
-<div>
-<h1>Seongkyu Choi</h1>
+        <p>
+            I am a master's student at Gachon University, South Korea.
+        </p>
 
-<p>
-M.S. Candidate<br>
-Gachon University<br>
-Autonomous Driving & Computer Vision
-</p>
+        <p>
+            My research focuses on computer vision for autonomous driving,
+            including off-road semantic segmentation, BEV perception,
+            multi-task learning, and robust scene understanding.
+        </p>
 
-<p>
-📧 Email:
-<a href="mailto:seongkyu950324@gmail.com">
-seongkyu950324@gmail.com
-</a>
-</p>
+        <p>
+            I am interested in developing efficient and reliable perception
+            models for intelligent vehicles, mobile robots, and autonomous systems.
+        </p>
 
-<p>
-<a href="https://github.com/sk950324">GitHub</a>
-</p>
+        <p class="links">
+            <a href="mailto:seongkyu950324@gmail.com">Email</a>
+            &nbsp;/&nbsp;
+            <a href="#">CV</a>
+            &nbsp;/&nbsp;
+            <a href="https://github.com/sk950324">Github</a>
+            &nbsp;/&nbsp;
+            <a href="#">Google Scholar</a>
+        </p>
+    </div>
 
-</div>
-
-</div>
-
-<div class="section">
-<h2>About Me</h2>
-
-<p>
-I am a master's student at Gachon University.
-My research interests include Off-road Semantic Segmentation,
-Autonomous Driving, BEV Perception, Multi-task Learning,
-and Computer Vision.
-</p>
-</div>
-
-<div class="section">
-<h2>Research Interests</h2>
-
-<ul>
-<li>Autonomous Driving</li>
-<li>Off-road Semantic Segmentation</li>
-<li>BEV Perception</li>
-<li>Multi-task Learning</li>
-<li>Computer Vision</li>
-</ul>
+    <div class="profile-photo">
+        <img src="profile.png" alt="profile photo">
+    </div>
 
 </div>
 
 <div class="section">
-
-<h2>Publications</h2>
-
-<div class="paper">
-
-<b>
-A Cross-Scale Decoder with Token Refinement
-for Off-Road Semantic Segmentation
-</b>
-
-<br>
-
-Applied Sciences, 2026
-
-</div>
-
+    <h2>Research Interests</h2>
+    <ul>
+        <li>Autonomous Driving</li>
+        <li>Off-road Semantic Segmentation</li>
+        <li>BEV Perception</li>
+        <li>Multi-task Learning</li>
+        <li>Robust Computer Vision</li>
+    </ul>
 </div>
 
 <div class="section">
+    <h2>Selected Publications</h2>
 
-<h2>Projects</h2>
-
-<ul>
-<li>DSRNet: Off-road Semantic Segmentation</li>
-<li>BEVerse-based Multi-task Perception</li>
-<li>Autonomous Driving Research</li>
-</ul>
-
+    <div class="pub">
+        <div class="pub-title">
+            A Cross-Scale Decoder with Token Refinement for Off-Road Semantic Segmentation
+        </div>
+        <div>
+            <strong>Seongkyu Choi</strong>, Jhonghyun An
+        </div>
+        <div class="venue">
+            Applied Sciences, 2026
+        </div>
+        <p>
+            This paper proposes an efficient cross-scale decoder for off-road
+            semantic segmentation, focusing on noisy boundaries, ambiguous terrain
+            transitions, and robust terrain perception.
+        </p>
+    </div>
 </div>
 
 <div class="section">
+    <h2>Projects</h2>
 
-<h2>Contact</h2>
+    <div class="project">
+        <div class="project-title">
+            DSRNet: Decoupled Semantic-Structural Refinement for Off-Road Semantic Segmentation
+        </div>
+        <p>
+            A semantic segmentation framework designed for unstructured off-road
+            environments with ambiguous boundaries, label noise, and complex terrain appearances.
+        </p>
+    </div>
 
-<p>
-Email:
-<a href="mailto:seongkyu950324@gmail.com">
-seongkyu950324@gmail.com
-</a>
-</p>
+    <div class="project">
+        <div class="project-title">
+            BEVerse-based Multi-task BEV Perception
+        </div>
+        <p>
+            Research on replacing and improving spatio-temporal BEV encoders
+            for multi-task autonomous driving perception, including detection,
+            segmentation, lane perception, and tracking.
+        </p>
+    </div>
+</div>
 
+<div class="section">
+    <h2>Experience</h2>
+    <ul>
+        <li>Research on off-road semantic segmentation and autonomous driving perception</li>
+        <li>Development of deep learning models using PyTorch and MMSegmentation</li>
+        <li>Experiments on RUGD, RELLIS-3D, and BEV perception frameworks</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Contact</h2>
+    <p>
+        Email:
+        <a href="mailto:seongkyu950324@gmail.com">
+            seongkyu950324@gmail.com
+        </a>
+    </p>
+</div>
+
+<div class="footer">
+    Last updated June 2026.
 </div>
 
 </body>
