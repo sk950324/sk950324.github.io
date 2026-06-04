@@ -74,17 +74,51 @@ a:hover {
     padding-bottom: 6px;
 }
 
-.pub, .project {
-    margin: 22px 0;
+.publication {
+    display: flex;
+    gap: 35px;
+    margin: 30px 0 55px 0;
+    align-items: flex-start;
 }
 
-.pub-title, .project-title {
-    font-size: 18px;
+.pub-image {
+    width: 220px;
+    flex-shrink: 0;
+}
+
+.pub-image img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.pub-info {
+    flex: 1;
+}
+
+.pub-title {
+    font-size: 20px;
     font-weight: bold;
+    line-height: 1.3;
+}
+
+.pub-authors {
+    font-size: 18px;
+    margin-top: 4px;
 }
 
 .venue {
+    font-size: 18px;
     font-style: italic;
+}
+
+.pub-links {
+    font-size: 18px;
+    margin: 4px 0 16px 0;
+}
+
+.pub-info p {
+    font-size: 18px;
+    line-height: 1.45;
 }
 
 .footer {
@@ -107,6 +141,16 @@ a:hover {
     .profile-text h1 {
         font-size: 38px;
     }
+
+    .publication {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .pub-image {
+        width: 100%;
+        max-width: 280px;
+    }
 }
 </style>
 </head>
@@ -122,18 +166,28 @@ a:hover {
             I am an M.S. student at Gachon University, South Korea, conducting research
             in 2D/3D computer vision for autonomous driving and robotics.
         </p>
-        
+
         <p>
             My research focuses on visual perception in complex environments, including
             off-road semantic segmentation, BEV-based scene understanding, multi-task
             perception, and robust 3D spatial representation.
         </p>
-        
+
         <p>
             I am particularly interested in developing efficient and reliable perception
             models that can operate under ambiguous boundaries, noisy supervision, and
             challenging real-world conditions for intelligent vehicles, mobile robots,
             and autonomous systems.
+        </p>
+
+        <p class="links">
+            <a href="mailto:seongkyu950324@gmail.com">Email</a>
+            &nbsp;/&nbsp;
+            <a href="files/SeongkyuChoi_CV.pdf" target="_blank">CV</a>
+            &nbsp;/&nbsp;
+            <a href="https://github.com/sk950324" target="_blank">GitHub</a>
+            &nbsp;/&nbsp;
+            <a href="https://scholar.google.com/citations?user=ViAYhlAAAAAJ&hl=ko" target="_blank">Google Scholar</a>
         </p>
     </div>
 
@@ -149,64 +203,46 @@ a:hover {
         <li>2D/3D Computer Vision</li>
         <li>Autonomous Driving Perception</li>
         <li>Off-Road Semantic Segmentation</li>
-        <li>Multi-task Learning</li>
-        <li>Robust Computer Vision</li>
+        <li>BEV Representation Learning</li>
+        <li>Multi-Task Learning</li>
+        <li>Robust Scene Understanding</li>
     </ul>
 </div>
 
 <div class="section">
     <h2>Selected Publications</h2>
 
-    <div class="pub">
-        <div class="pub-title">
-            CSTR: Cross-Scale Token Refinement with Gated Structural Injection for Off-Road Segmentation
+    <div class="publication">
+        <div class="pub-image">
+            <img src="img/cstr.png" alt="CSTR paper image">
         </div>
-        <div>
-            <strong>Seongkyu Choi</strong>, Jhonghyun An
+
+        <div class="pub-info">
+            <div class="pub-title">
+                CSTR: Cross-Scale Token Refinement with Gated Structural Injection for Off-Road Segmentation
+            </div>
+
+            <div class="pub-authors">
+                <strong>Seongkyu Choi</strong>, Jhonghyun An
+            </div>
+
+            <div class="venue">
+                Applied Sciences, 2026
+            </div>
+
+            <div class="pub-links">
+                <a href="files/CSTR_AppliedSciences.pdf" target="_blank">Paper</a>
+                /
+                <a href="#">bib</a>
+            </div>
+
+            <p>
+                This paper proposes an efficient cross-scale decoder for off-road
+                semantic segmentation, focusing on noisy boundaries, ambiguous terrain
+                transitions, and robust terrain perception.
+            </p>
         </div>
-        <div class="venue">
-            Applied Sciences, 2026
-        </div>
-        <p>
-            This paper proposes an efficient cross-scale decoder for off-road
-            semantic segmentation, focusing on noisy boundaries, ambiguous terrain
-            transitions, and robust terrain perception.
-        </p>
     </div>
-</div>
-
-<div class="section">
-    <h2>Projects</h2>
-
-    <div class="project">
-        <div class="project-title">
-            DSRNet: Decoupled Semantic-Structural Refinement for Off-Road Semantic Segmentation
-        </div>
-        <p>
-            A semantic segmentation framework designed for unstructured off-road
-            environments with ambiguous boundaries, label noise, and complex terrain appearances.
-        </p>
-    </div>
-
-    <div class="project">
-        <div class="project-title">
-            BEVerse-based Multi-task BEV Perception
-        </div>
-        <p>
-            Research on replacing and improving spatio-temporal BEV encoders
-            for multi-task autonomous driving perception, including detection,
-            segmentation, lane perception, and tracking.
-        </p>
-    </div>
-</div>
-
-<div class="section">
-    <h2>Experience</h2>
-    <ul>
-        <li>Research on off-road semantic segmentation and autonomous driving perception</li>
-        <li>Development of deep learning models using PyTorch and MMSegmentation</li>
-        <li>Experiments on RUGD, RELLIS-3D, and BEV perception frameworks</li>
-    </ul>
 </div>
 
 <div class="section">
