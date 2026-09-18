@@ -8,6 +8,7 @@ selected: true
 venue: "Applied Sciences"
 authors: "Seongkyu Choi, Jhonghyun An"
 paperurl: /utils/CSTR_AppliedSciences.pdf
+citation_url: "https://www.mdpi.com/2076-3417/16/11/5238"
 image: /img/cstr.png
 image_alt: "Overview of the CSTR off-road segmentation method"
 summary: "An efficient cross-scale decoder for off-road semantic segmentation, focusing on noisy boundaries, ambiguous terrain transitions, and robust terrain perception."
@@ -25,3 +26,5 @@ DOI: [10.3390/app16115238](https://doi.org/10.3390/app16115238)
 This paper proposes an efficient cross-scale decoder for off-road semantic segmentation, focusing on noisy boundaries, ambiguous terrain transitions, and robust terrain perception.
 
 [Download Paper (PDF)]({{ page.paperurl | relative_url }}){: .btn .btn--primary}
+
+[Read on MDPI]({{ page.citation_url }}){: .btn .btn--primary}

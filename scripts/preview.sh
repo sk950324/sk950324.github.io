@@ -12,4 +12,4 @@ fi
 
 bundle check || bundle install
 exec bundle exec jekyll serve --host 127.0.0.1 --port 4000 \
-  --config _config.yml,_config_local.yml "$@"
+  --config _config.yml,_config_local.yml --force_polling "$@"
