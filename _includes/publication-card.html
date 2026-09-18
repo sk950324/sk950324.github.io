@@ -15,6 +15,10 @@
         <a href="{{ publication.paperurl | relative_url }}">Paper (PDF)</a>
         <span aria-hidden="true"> · </span>
       {% endif %}
+      {% if publication.citation_url %}
+        <a href="{{ publication.citation_url }}">Publisher</a>
+        <span aria-hidden="true"> · </span>
+      {% endif %}
       <a href="{{ publication.url | relative_url }}">Details</a>
     </p>
   </div>

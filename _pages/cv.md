@@ -101,11 +101,10 @@ Role: Dataset Development, Object Detection, VLM Compression, and Robot Integrat
 
 ## Publications
 
-- **Seongkyu Choi** and Jhonghyun An. “[Enhancing Group Attention for Off-Road Semantic Segmentation via Transition-Aware Refinement](https://ieeexplore.ieee.org/abstract/document/11557155).” *IEEE Signal Processing Letters*, vol. 33, pp. 2535–2539, 2026. DOI: [10.1109/LSP.2026.3702520](https://doi.org/10.1109/LSP.2026.3702520).
-
+{% comment %}All papers are maintained in _publications/*.md and shared with the Publications page.{% endcomment %}
 {% assign publications = site.publications | sort: 'year' | reverse %}
 {% for publication in publications %}
-- {{ publication.authors }}. “[{{ publication.title }}]({{ publication.url | relative_url }})” *{{ publication.venue }}*, {{ publication.year }}.
+- {{ publication.authors | replace: 'Seongkyu Choi', '**Seongkyu Choi**' }}. “[{{ publication.title }}]({{ publication.citation_url | default: publication.url | relative_url }})” *{{ publication.venue }}*, {% if publication.volume %}vol. {{ publication.volume }}, {% endif %}{% if publication.pages %}pp. {{ publication.pages }}, {% endif %}{{ publication.year }}.{% if publication.doi %} DOI: [{{ publication.doi }}](https://doi.org/{{ publication.doi }}).{% endif %}
 {% endfor %}
 
 ## Awards

@@ -4,6 +4,7 @@ permalink: /publications/gpt-4off/
 collection: publications
 category: manuscripts
 year: 2025
+selected: true
 venue: "Applied Sciences"
 authors: "Nahyeong Kim, Seongkyu Choi, Sun Choi, Yejun Lee, Youngjae Cheong, Jhonghyun An"
 summary: "On-board traversability probability estimation for off-road driving via GPT knowledge distillation. Equal contribution by all authors."
