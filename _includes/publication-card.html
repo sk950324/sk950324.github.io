@@ -7,7 +7,7 @@
   {% endif %}
   <div class="publication-card__body">
     <h3><a href="{{ publication.url | relative_url }}">{{ publication.title }}</a></h3>
-    <p class="publication-card__authors">{{ publication.authors | escape }}</p>
+    <p class="publication-card__authors">{{ publication.authors | escape | replace: 'Seongkyu Choi', '<strong>Seongkyu Choi</strong>' }}</p>
     <p><em>{{ publication.venue }}</em>, {{ publication.year }}</p>
     <p>{{ publication.summary }}</p>
     <p class="publication-card__links">

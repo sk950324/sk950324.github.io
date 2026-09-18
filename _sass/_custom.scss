@@ -15,7 +15,10 @@
     h3 { margin: 0 0 .5rem; font-size: 1em; }
     p { margin: 0 0 .5rem; font-size: .85em; }
   }
-  &__authors { font-weight: 600; }
+  &__authors {
+    font-weight: 400;
+    strong { font-weight: 700; }
+  }
 }
 
 @media (max-width: 600px) {
