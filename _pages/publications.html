@@ -1,0 +1,14 @@
+---
+layout: single
+title: "Publications"
+permalink: /publications/
+author_profile: true
+---
+
+<p>For my publication list and citations, visit <a href="{{ site.author.googlescholar }}">Google Scholar</a>.</p>
+
+<h2>Journal Articles</h2>
+{% assign publications = site.publications | sort: 'year' | reverse %}
+{% for publication in publications %}
+  {% include publication-card.html publication=publication %}
+{% endfor %}
