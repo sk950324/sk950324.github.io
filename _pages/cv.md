@@ -33,13 +33,18 @@ Transferred to Hansei University.
 
 ## Research Experience
 
-**Research Student | Vehicle Intelligence Perception Lab, Gachon University**  
-Aug.2023–Aug.2026
+**M.S. Student Researcher | Vehicle Intelligence Perception Lab (VIPLAB), Gachon University**  
+Mar.2024–Aug.2026
 
 - Developed vision models for autonomous vehicles and robots, including RGB/thermal small-object detection, camera-only traversability estimation, and YOLO–VLM abnormal-situation recognition.
 - Built data collection, augmentation, semi-automatic labeling, and iterative training pipelines; analyzed false positives and false negatives to improve perception models.
 - Optimized and deployed models using ONNX, TensorRT, C++, and Jetson platforms, and integrated perception modules with ROS2 and Docker.
 - Evaluated accuracy, latency, FPS, memory, and power consumption under on-device and integrated-system conditions.
+
+**Research Intern | Vehicle Intelligence Perception Lab (VIPLAB), Gachon University**  
+Aug.2023–Feb.2024
+
+Completed a research internship before entering the M.S. program in Artificial Intelligence in March 2024.
 
 ## Work Experience
 
@@ -55,7 +60,7 @@ Jun.2021–Mar.2023
 
 ### Wide Semantic Mapping for Multi-Robot Systems
 
-**My participation: Mar.2024–Aug.2026** | Mobiltech-led national R&D project  
+**My participation: Apr.2024–Aug.2026** | Mobiltech-led national R&D project  
 Funded by the Ministry of SMEs and Startups, Korea  
 Role: Off-road Perception Model Development
 
@@ -66,7 +71,7 @@ Role: Off-road Perception Model Development
 
 ### RGB/Thermal Data Pipelines and Long-Range Small-Object Detection
 
-**My participation: Mar.2024–Aug.2026** | Hyundai Rotem  
+**My participation: Nov.2024–Aug.2026** | Hyundai Rotem  
 Role: RGB/Thermal Data Pipeline Development, Object Detection, and On-board Deployment
 
 - Expanded the training dataset from approximately **1,500 to 4,000 images** and reduced labeling time by **91.7%** through semi-automatic labeling and review.
