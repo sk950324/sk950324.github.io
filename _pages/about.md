@@ -6,11 +6,11 @@ redirect_from:
 author_profile: true
 ---
 
-I am an **M.S. student at Gachon University**, South Korea, conducting research in **2D/3D computer vision for autonomous driving and robotics**.
+I received my M.S. in Artificial Intelligence from Gachon University, South Korea, in August 2026. My research focuses on 2D/3D computer vision for autonomous driving and robotics.
 
-My research interests include semantic segmentation, BEV perception, multi-task learning, and scene understanding, with a focus on visual perception systems for autonomous driving and robotic vision.
+Through industry-academic projects, I have worked on data collection and validation, perception model development, and deployment on embedded platforms. My experience includes off-road scene understanding, camera–LiDAR knowledge distillation, RGB/thermal object detection, and vision-language models for robotic perception.
 
-I am always open to collaborations and discussions. Please feel free to [reach out](mailto:{{ site.author.email }}) if you would like to connect or discuss research opportunities.
+I am interested in building reliable perception systems that connect research with real-world deployment.
 
 [Download CV (PDF)]({{ '/utils/Choi_CV.pdf' | relative_url }}){: .btn .btn--primary}
 [Google Scholar]({{ site.author.googlescholar }}){: .btn .btn--inverse}
@@ -22,6 +22,19 @@ I am always open to collaborations and discussions. Please feel free to [reach o
 - Off-Road Semantic Segmentation
 - Multi-Task Learning
 - Robust Scene Understanding
+
+## Selected Projects
+
+{% assign selected_projects = site.data.projects | where: 'selected', true %}
+{% for project in selected_projects %}
+<article class="project-summary">
+  <h3><a href="{{ '/projects/' | relative_url }}#{{ project.id }}">{{ project.title | escape }}</a></h3>
+  <p>{{ project.summary | escape }}</p>
+  <p><strong>{{ project.highlight | escape }}</strong></p>
+</article>
+{% endfor %}
+
+[View all projects]({{ '/projects/' | relative_url }})
 
 ## Selected Publications
 

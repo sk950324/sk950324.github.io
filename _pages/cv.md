@@ -53,60 +53,67 @@ Jun.2021–Mar.2023
 
 ## Projects
 
-### Development of Wide Semantic Map Building and Update Technology for Multi-Robot Systems in Unstructured Outdoor Environments
+### Wide Semantic Mapping for Multi-Robot Systems
 
-**Project period: Apr.2025–Mar.2027** | National R&D project led by Mobiltech  
+**My participation: Mar.2024–Aug.2026** | Mobiltech-led national R&D project  
 Funded by the Ministry of SMEs and Startups, Korea  
 Role: Off-road Perception Model Development
 
-- Developed RGB–LiDAR semantic segmentation for unstructured outdoor environments, using knowledge distillation to transfer RGB-derived features into LiDAR-based learning.
-- Developed terrain-aware traversability perception by mapping semantic segmentation results to different levels of driving difficulty.
-- Achieved **49.3 mIoU for traversable-area recognition** and **47.6 mIoU for semantic segmentation** in the completed first-stage development.
-- Contributed to path similarity recognition and multi-scan change detection for semantic map updates, using structural features from previously traversed and newly acquired sensor data.
+- Developed RGB–LiDAR semantic segmentation and terrain-aware traversability perception for off-road semantic mapping.
+- Achieved **49.3 mIoU for traversable-area recognition** and **47.6 mIoU for semantic segmentation** in first-stage development.
+
+[View project details →]({{ '/projects/' | relative_url }}#wide-semantic-mapping)
 
 ### RGB/Thermal Data Pipelines and Long-Range Small-Object Detection
 
-**Project period: Aug.2024–Jul.2026** | Industry-commissioned research for Hyundai Rotem  
+**My participation: Mar.2024–Aug.2026** | Hyundai Rotem  
 Role: RGB/Thermal Data Pipeline Development, Object Detection, and On-board Deployment
 
-- Built RGB/thermal data pipelines covering collection, generative augmentation, quality review, semi-automatic labeling, and iterative retraining; expanded the training dataset from approximately **1,500 to 4,000 images**.
-- Combined model-generated labels with manual review, reducing labeling time by **91.7%**; used false-positive, false-negative, and class-confusion analysis to guide retraining.
-- Improved nighttime thermal detection **AP from 33.63 to 36.13** and **AP75 from 26.17 to 30.55**.
-- Implemented a **PyTorch → ONNX → TensorRT** conversion pipeline and integrated camera input, preprocessing, inference, postprocessing, and output in C++.
-- Reduced inference latency from **28.29 to 14.18 ms** and increased throughput from **35.3 to 70.5 FPS**, while maintaining mAP50 of 0.595 and mAP50–95 of 0.354; verified simultaneous processing of at least two cameras.
+- Expanded the training dataset from approximately **1,500 to 4,000 images** and reduced labeling time by **91.7%** through semi-automatic labeling and review.
+- Deployed a C++/TensorRT pipeline, reducing latency from **28.29 to 14.18 ms** and increasing throughput from **35.3 to 70.5 FPS** while maintaining detection accuracy.
+
+[View project details →]({{ '/projects/' | relative_url }}#rgb-thermal-detection)
 
 ### Multi-Task Vehicle Perception and On-board Optimization
 
-**Project period: Apr.2024–Aug.2026** | IITP national R&D project led by HL Mando  
+**My participation: Apr.2024–Aug.2026** | IITP national R&D project led by HL Mando  
 Role: Multi-Task Perception Model Development, Model Lightweighting, and On-device Validation
 
-- Combined **YOLOv5 and TwinLiteNet** to perform **object detection, lane-line perception, and drivable-area segmentation** with two models; validated on 10,000 BDD100K images and 4,773 FMTC frames.
-- Reduced lane-model refinement from three stages to two, shared refinement heads, and reduced fully connected hidden dimensions; improved latency from **6.5 to 4.8 ms** and throughput from **155.5 to 207.2 FPS**.
-- Validated simultaneous FP16, batch-size-one execution on **Jetson AGX Orin**: **31.88 FPS for YOLOv5** and **27.44 FPS for TwinLiteNet**, with **7.88 GiB peak RAM** and **13.74 W average power**.
-- Profiled decoding, preprocessing, GPU transfer, inference, postprocessing, visualization, and encoding; identified visualization as the largest output-stage bottleneck (**156.08 of 180.60 ms**).
-- Replaced NumPy mask blending with OpenCV, separated decoding/inference/visualization into a three-stage asynchronous pipeline, and applied TensorRT FP16. Improved end-to-end throughput from **3.73 to 24.56 FPS** and model forward latency from **48.29 to 14.0 ms**, validated over three runs of 1,000 frames.
+- Developed and validated object detection, lane-line perception, and drivable-area segmentation on **Jetson AGX Orin**.
+- Improved end-to-end throughput from **3.73 to 24.56 FPS** through pipeline optimization and TensorRT FP16, validated over three runs of 1,000 frames.
+
+[View project details →]({{ '/projects/' | relative_url }}#multi-task-perception)
 
 ### Camera-Only Traversability Estimation via LiDAR Knowledge Distillation
 
-**Sep.2024–Feb.2025** | Industry-commissioned research for Mobiltech  
+**My participation: Sep.2024–Feb.2025**  
+Sponsor: National IT Industry Promotion Agency (NIPA), with Mobiltech & GINT  
 Role: Traversability Perception, Knowledge Distillation, and Camera-Only Distance Estimation
 
-- Prepared **10,000 training images and 1,000 evaluation images**, defining seven environment/hazard classes and traversability criteria for agricultural environments.
-- Applied **MSFSKD** to transfer 3D spatial information from RGB/LiDAR training into a 2D network, enabling **camera-only inference without an additional LiDAR input**.
-- Achieved **0.87 mIoU for semantic segmentation** and **0.91 mIoU for traversability classification**, exceeding the respective targets of 0.50 and 0.55.
-- Generated distance ground truth by projecting segmentation labels onto LiDAR points, used median filtering to reject outliers, and designed a **five-block MLP** to estimate distance from object class and bounding-box dimensions.
-- Ran camera-only segmentation and distance regression on **Jetson Orin Nano** at approximately **0.1 s/frame**; most reported distance errors were within **0–3 m**. Defined object/terrain-boundary distance outputs and coordinated CAN-interface integration.
+- Developed camera-only perception through LiDAR knowledge distillation, achieving **0.87 mIoU for semantic segmentation** and **0.91 mIoU for traversability classification**.
+- Ran segmentation and distance regression on **Jetson Orin Nano** at approximately **0.1 s/frame**.
+
+[View project details →]({{ '/projects/' | relative_url }}#camera-only-traversability)
 
 ### YOLO–VLM Abnormal-Situation Recognition for Patrol Robots
 
-**Oct.2024–Mar.2025** | Industry-commissioned research for Neubility  
+**My participation: Nov.2024–Mar.2025** | Neubility  
 Role: Dataset Development, Object Detection, VLM Compression, and Robot Integration
 
-- Reviewed **8,436 abnormal-behavior videos** and a fire dataset of approximately **1.5 million images**, selecting representative samples to build a seven-class patrol-object dataset; used InternVL-based auto-labeling and prepared LoRA training data.
-- Trained a **YOLO11n** detector for seven target classes, with reported class-wise accuracy of **66.3–81.7%**.
-- Compared VILA, UForm, and SmolVLM under the same on-device conditions. Applied **AWQ to VILA1.5-3B**, reducing model size from **10.06 to 1.57 GB** and VRAM usage from **8.34 to 5.59 GB**.
-- Designed **Descript-YOLO**: camera input → YOLO detection → queue-based event conditions → VLM situation description → ROS2 topic output.
-- Integrated the perception pipeline using **ROS2 Humble and NVIDIA Docker** on **Jetson Orin Nano**, and validated its applicability to real patrol-robot demonstration environments.
+- Integrated YOLO detection and VLM situation descriptions in **Descript-YOLO**, using ROS2 and Docker on **Jetson Orin Nano**.
+- Applied AWQ to VILA1.5-3B, reducing model size from **10.06 to 1.57 GB** and VRAM usage from **8.34 to 5.59 GB**.
+
+[View project details →]({{ '/projects/' | relative_url }}#patrol-robot-perception)
+
+### Development of Multi-Sensor Fusion Algorithm for Countering Magnetic/Acoustic Stealth Targets
+
+**My participation: Apr.2024–Mar.2025** | LIG Nex1  
+Role: Sea-Trial Data Quality Review and Model Evaluation Analysis
+
+- Selected **23 usable files from 46 sea-trial data files** through data-quality screening.
+- Compared predictive performance of team-developed models and assessed sensor-data suitability for training.
+
+[View project details →]({{ '/projects/' | relative_url }}#multi-sensor-fusion)
 
 ## Publications
 

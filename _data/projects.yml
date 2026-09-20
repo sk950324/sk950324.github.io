@@ -1,0 +1,126 @@
+# About와 Projects에서 함께 사용하는 프로젝트 내용입니다.
+# selected: true인 프로젝트만 About에 요약으로 표시됩니다.
+# participation_period: 실제 본인 참여 기간. 확인 전에는 null로 두며 화면에 표시하지 않습니다.
+# 기간 출처: utils/Choi_CV.pdf, 2쪽. NIPA와 뉴빌리티는 PDF의 Period를 참여 기간으로 사용합니다.
+- id: wide-semantic-mapping
+  image: /img/mse.png
+  image_alt: Ministry of SMEs and Startups logo
+  title: Wide Semantic Mapping for Multi-Robot Systems
+  full_title: Development of Wide Semantic Map Building and Update Technology for Multi-Robot Systems in Unstructured Outdoor Environments
+  period: "Project period: Apr. 2025–Mar. 2027"
+  participation_period: Mar. 2024–Aug. 2026
+  organization: National R&D project led by Mobiltech; funded by the Ministry of SMEs and Startups, Korea
+  role: Off-road Perception Model Development
+  selected: true
+  summary: RGB–LiDAR semantic segmentation and terrain-aware traversability perception for building and updating off-road semantic maps.
+  highlight: "First-stage results: 49.3 mIoU for traversable-area recognition and 47.6 mIoU for semantic segmentation."
+  problem: Recognize terrain and traversable areas in unstructured outdoor environments to support semantic map construction and updates for multiple robots.
+  approach:
+    - Developed RGB–LiDAR semantic segmentation, using knowledge distillation to transfer RGB-derived features into LiDAR-based learning.
+    - Mapped semantic segmentation results to different levels of driving difficulty for terrain-aware traversability perception.
+    - Contributed to path similarity recognition and multi-scan change detection for semantic map updates, using structural features from previously traversed and newly acquired sensor data.
+  results:
+    - "Achieved **49.3 mIoU for traversable-area recognition** and **47.6 mIoU for semantic segmentation** in the completed first-stage development."
+
+- id: rgb-thermal-detection
+  image: /img/로템마크.png
+  image_alt: Hyundai Rotem logo
+  title: RGB/Thermal Data Pipelines and Long-Range Small-Object Detection
+  period: "Project period: Nov. 2024–Sep. 2026"
+  participation_period: Mar. 2024–Aug. 2026
+  organization: Industry-commissioned research for Hyundai Rotem
+  role: RGB/Thermal Data Pipeline Development, Object Detection, and On-board Deployment
+  selected: true
+  summary: RGB/thermal data curation, small-object detection, and C++/TensorRT deployment for real-time perception.
+  highlight: "Reduced labeling time by 91.7% and increased inference throughput from 35.3 to 70.5 FPS."
+  problem: Improve long-range small-object detection under diverse environmental conditions while meeting real-time deployment requirements.
+  approach:
+    - Built RGB/thermal data pipelines for collection, generative augmentation, quality review, semi-automatic labeling, and iterative retraining.
+    - Combined model-generated labels with manual review; used false-positive, false-negative, and class-confusion analysis to guide dataset refinement and retraining.
+    - Implemented a PyTorch → ONNX → TensorRT conversion pipeline, integrating camera input, preprocessing, inference, postprocessing, and output in C++.
+  results:
+    - "Expanded the training dataset from approximately **1,500 to 4,000 images** and reduced labeling time by **91.7%**."
+    - "Improved nighttime thermal detection **AP from 33.63 to 36.13** and **AP75 from 26.17 to 30.55**."
+    - "Reduced latency from **28.29 to 14.18 ms** and increased throughput from **35.3 to 70.5 FPS**, maintaining mAP50 of 0.595 and mAP50–95 of 0.354."
+  validation: Verified simultaneous processing of at least two cameras in the integrated C++ perception pipeline.
+
+- id: multi-task-perception
+  image: /img/IITP.jpeg
+  image_alt: Institute of Information & Communications Technology Planning & Evaluation (IITP) logo
+  title: Multi-Task Vehicle Perception and On-board Optimization
+  period: "Project period: Apr. 2024–Dec. 2027"
+  participation_period: Apr. 2024–Aug. 2026
+  organization: IITP national R&D project led by HL Mando
+  role: Multi-Task Perception Model Development, Model Lightweighting, and On-device Validation
+  selected: true
+  summary: Object detection, lane-line perception, and drivable-area segmentation with an optimized on-board perception pipeline.
+  highlight: "Improved end-to-end throughput from 3.73 to 24.56 FPS through pipeline optimization and TensorRT FP16."
+  problem: Run multiple vehicle perception tasks on embedded hardware while reducing both model latency and full-pipeline overhead.
+  approach:
+    - Combined YOLOv5 and TwinLiteNet for object detection, lane-line perception, and drivable-area segmentation.
+    - Reduced lane-model refinement from three stages to two, shared refinement heads, and reduced fully connected hidden dimensions.
+    - "Profiled decoding, preprocessing, GPU transfer, inference, postprocessing, visualization, and encoding; identified visualization as the largest output-stage bottleneck (**156.08 of 180.60 ms**)."
+    - Replaced NumPy mask blending with OpenCV, separated decoding/inference/visualization into three asynchronous stages, and applied TensorRT FP16.
+  results:
+    - "Improved lane-model latency from **6.5 to 4.8 ms** and throughput from **155.5 to 207.2 FPS**."
+    - "Validated simultaneous FP16, batch-size-one execution on **Jetson AGX Orin**: **31.88 FPS for YOLOv5** and **27.44 FPS for TwinLiteNet**, with **7.88 GiB peak RAM** and **13.74 W average power**."
+    - "Improved end-to-end throughput from **3.73 to 24.56 FPS** and model forward latency from **48.29 to 14.0 ms**."
+  validation: Validated perception on 10,000 BDD100K images and 4,773 FMTC frames. Evaluated end-to-end improvements over three runs of 1,000 frames.
+
+- id: camera-only-traversability
+  image: /img/nipa.png
+  image_alt: National IT Industry Promotion Agency (NIPA) logo
+  title: Camera-Only Traversability Estimation via LiDAR Knowledge Distillation
+  period: Sep. 2024–Feb. 2025
+  participation_period: Sep. 2024–Feb. 2025
+  organization: "Sponsor: National IT Industry Promotion Agency (NIPA), with Mobiltech & GINT"
+  role: Traversability Perception, Knowledge Distillation, and Camera-Only Distance Estimation
+  selected: false
+  summary: Transfer LiDAR spatial knowledge into a camera-only model for agricultural terrain perception and distance estimation.
+  problem: Estimate traversability and distance in agricultural environments using camera-only inference without an additional LiDAR input.
+  approach:
+    - Prepared 10,000 training images and 1,000 evaluation images with seven environment/hazard classes and traversability criteria.
+    - Applied MSFSKD to transfer 3D spatial information from RGB/LiDAR training into a 2D network, enabling camera-only inference without an additional LiDAR input.
+    - Generated distance ground truth by projecting segmentation labels onto LiDAR points, rejected outliers with median filtering, and designed a five-block MLP using object class and bounding-box dimensions.
+  results:
+    - "Achieved **0.87 mIoU for semantic segmentation** and **0.91 mIoU for traversability classification**, exceeding the respective targets of 0.50 and 0.55."
+    - "Ran segmentation and distance regression on **Jetson Orin Nano** at approximately **0.1 s/frame**; most reported distance errors were within **0–3 m**."
+  validation: Defined object/terrain-boundary distance outputs and coordinated CAN-interface integration for camera-only deployment.
+
+- id: patrol-robot-perception
+  image: /img/뉴빌리티.png
+  image_alt: Neubility logo
+  title: YOLO–VLM Abnormal-Situation Recognition for Patrol Robots
+  period: Nov. 2024–Mar. 2025
+  participation_period: Nov. 2024–Mar. 2025
+  organization: Industry-commissioned research for Neubility
+  role: Dataset Development, Object Detection, VLM Compression, and Robot Integration
+  selected: false
+  summary: Combine object detection and vision-language descriptions for on-board abnormal-situation recognition.
+  problem: Recognize and describe abnormal situations on a patrol robot within embedded memory and compute limits.
+  approach:
+    - Reviewed 8,436 abnormal-behavior videos and a fire dataset of approximately 1.5 million images, selecting representative samples to build a seven-class patrol-object dataset; used InternVL-based auto-labeling and prepared LoRA training data.
+    - Trained a YOLO11n detector for seven target classes and compared VILA, UForm, and SmolVLM under the same on-device conditions.
+    - "Designed Descript-YOLO: camera input → YOLO detection → queue-based event conditions → VLM situation description → ROS2 topic output."
+  results:
+    - "Reported class-wise detection accuracy of **66.3–81.7%** across seven target classes."
+    - "Applied **AWQ to VILA1.5-3B**, reducing model size from **10.06 to 1.57 GB** and VRAM usage from **8.34 to 5.59 GB**."
+  validation: Integrated ROS2 Humble and NVIDIA Docker on Jetson Orin Nano and validated applicability to real patrol-robot demonstration environments.
+
+# 출처: 수정된 utils/Choi_CV.pdf, 3쪽. PDF의 Period를 참여 기간으로 사용합니다.
+- id: multi-sensor-fusion
+  image: /img/lig.png
+  image_alt: LIG Nex1 logo
+  title: Development of Multi-Sensor Fusion Algorithm for Countering Magnetic/Acoustic Stealth Targets
+  period: Apr. 2024–Mar. 2025
+  participation_period: Apr. 2024–Mar. 2025
+  organization: Industry-commissioned research for LIG Nex1
+  role: Sea-Trial Data Quality Review and Model Evaluation Analysis
+  selected: false
+  summary: Reviewed sea-trial sensor data quality and analyzed training and evaluation results of models developed by the project team.
+  problem: Assess the suitability of company-provided sea-trial sensor data for model training and compare predictive performance across team-developed models.
+  approach:
+    - Screened 46 company-provided sea-trial data files from the second delivery for collection errors and recording gaps.
+    - Analyzed training and evaluation results of models developed by the project team, comparing predictive performance and assessing sensor-data suitability for training.
+  results:
+    - "Selected **23 usable files from 46 sea-trial data files** for analysis after data-quality screening."

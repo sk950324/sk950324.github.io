@@ -1,0 +1,50 @@
+---
+layout: single
+title: "Projects"
+permalink: /projects/
+author_profile: true
+---
+
+<p>Research and development in autonomous driving and robotics, from perception models and data pipelines to on-board deployment.</p>
+
+<p>Through industry-academic collaborations, I have contributed to data curation, multimodal perception, and model optimization for autonomous vehicles and robots.
+My work connects model development with system integration and on-device validation, focusing on perception accuracy, real-time performance, and embedded resource constraints.</p>
+
+{% for project in site.data.projects %}
+<article class="project-detail{% if project.image %} project-detail--with-image{% endif %}" aria-labelledby="{{ project.id }}">
+  {% if project.image %}
+  <div class="project-detail__image">
+    <img src="{{ project.image | relative_url | escape }}" alt="{{ project.image_alt | escape }}" loading="lazy">
+  </div>
+  {% endif %}
+  <div class="project-detail__body">
+  <h2 id="{{ project.id }}">{{ project.title | escape }}</h2>
+  {% if project.full_title %}<p><strong>Full project title:</strong> {{ project.full_title | escape }}</p>{% endif %}
+  <p><strong>{{ project.period | escape }}</strong><br>{{ project.organization | escape }}</p>
+  {% if project.participation_period and project.participation_period != empty %}
+  <p><strong>My participation:</strong> {{ project.participation_period | escape }}</p>
+  {% endif %}
+  <p><strong>My role:</strong> {{ project.role | escape }}</p>
+
+  <h3>Problem</h3>
+  <p>{{ project.problem | escape }}</p>
+
+  <h3>Approach</h3>
+  <ul>
+    {% for item in project.approach %}<li>{{ item | markdownify }}</li>{% endfor %}
+  </ul>
+
+  <h3>Results</h3>
+  <ul>
+    {% for item in project.results %}<li>{{ item | markdownify }}</li>{% endfor %}
+  </ul>
+
+  {% if project.validation %}
+  <h3>Deployment &amp; Validation</h3>
+  <p>{{ project.validation | escape }}</p>
+  {% endif %}
+  </div>
+</article>
+{% endfor %}
+
+<p><a href="{{ '/cv/' | relative_url }}">View full CV</a> · <a href="{{ '/utils/Choi_CV.pdf' | relative_url }}">Download CV (PDF)</a></p>

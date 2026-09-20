@@ -36,6 +36,8 @@ Docker 미리보기 설정도 포함했지만 이번 로컬 검증은 Ruby 실�
 | --- | --- |
 | 이름, 소속, 이메일, 소셜 링크 | `_config.yml` |
 | 메인 소개글과 연구 관심사 | `_pages/about.md` |
+| 프로젝트 내용과 대표 프로젝트 선택 | `_data/projects.yml` (`selected: true`이면 About에 표시) |
+| 프로젝트 상세 페이지 구성 | `_pages/projects.html` |
 | 웹 이력서 | `_pages/cv.md` |
 | PDF 이력서 | `utils/Choi_CV.pdf` |
 | 상단 메뉴 | `_data/navigation.yml` |
@@ -45,6 +47,9 @@ Docker 미리보기 설정도 포함했지만 이번 로컬 검증은 Ruby 실�
 | 추가 스타일 | `_sass/_custom.scss` |
 
 웹 이력서와 PDF 이력서는 별개이므로 각각 업데이트하세요.
+프로젝트 설명은 `_data/projects.yml`에서 수정하면 About과 Projects에 함께 반영됩니다. CV의 프로젝트 요약은 `_pages/cv.md`에서 따로 수정하세요.
+Projects의 본인 참여 기간은 각 과제의 `participation_period`에 입력하세요. `null`이면 표시하지 않습니다. 전체 과제 기간인 `period`와 구분하여 실제 참여 날짜를 입력하세요.
+상단 메뉴는 About → Projects → Publications → CV 순서입니다.
 기존 PDF와 `img/` 주소는 계속 사용할 수 있습니다.
 연구·학력·경력·프로젝트 내용은 기존 홈페이지 및 CV PDF를 바탕으로 옮겼습니다.
 프로젝트 날짜와 심사 상태는 원본 자료에 기재된 내용을 기준으로 합니다.
