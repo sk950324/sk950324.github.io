@@ -60,7 +60,7 @@ Jun.2021–Mar.2023
 
 ### Wide Semantic Mapping for Multi-Robot Systems
 
-**My participation: Apr.2024–Aug.2026** | Mobiltech-led national R&D project  
+**My participation: Apr.2025–Aug.2026** | Mobiltech-led national R&D project  
 Funded by the Ministry of SMEs and Startups, Korea  
 Role: Off-road Perception Model Development
 
