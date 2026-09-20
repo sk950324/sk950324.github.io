@@ -145,6 +145,8 @@ Recognized for outstanding academic achievement, exemplary conduct, and service 
 
 | Course | Grade |
 | --- | --- |
+| Artificial Intelligence | B0 |
+| Optimization Theory for Machine Learning | B0 |
 | Advanced Topics in AI Autonomous Driving | A0 |
 | Internet and Mobile Computing | A0 |
 | Fashion Big Data Analysis and Application | A+ |
