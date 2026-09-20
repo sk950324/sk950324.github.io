@@ -12,7 +12,7 @@ My research interests include semantic segmentation, BEV perception, multi-task 
 
 I am always open to collaborations and discussions. Please feel free to [reach out](mailto:{{ site.author.email }}) if you would like to connect or discuss research opportunities.
 
-[Download CV (PDF)]({{ '/utils/SeongkyuChoi_CV.pdf' | relative_url }}){: .btn .btn--primary}
+[Download CV (PDF)]({{ '/utils/Choi_CV.pdf' | relative_url }}){: .btn .btn--primary}
 [Google Scholar]({{ site.author.googlescholar }}){: .btn .btn--inverse}
 
 ## Research Interests

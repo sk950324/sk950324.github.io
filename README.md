@@ -37,7 +37,7 @@ Docker 미리보기 설정도 포함했지만 이번 로컬 검증은 Ruby 실�
 | 이름, 소속, 이메일, 소셜 링크 | `_config.yml` |
 | 메인 소개글과 연구 관심사 | `_pages/about.md` |
 | 웹 이력서 | `_pages/cv.md` |
-| PDF 이력서 | `utils/SeongkyuChoi_CV.pdf` |
+| PDF 이력서 | `utils/Choi_CV.pdf` |
 | 상단 메뉴 | `_data/navigation.yml` |
 | 논문 정보 | `_publications/*.md` |
 | 논문 목록 페이지 | `_pages/publications.html` |
