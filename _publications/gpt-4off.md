@@ -4,6 +4,7 @@ permalink: /publications/gpt-4off/
 collection: publications
 category: manuscripts
 year: 2025
+date: 2025-02-17
 selected: true
 venue: "Applied Sciences"
 authors: "Nahyeong Kim, Seongkyu Choi, Sun Choi, Yejun Lee, Youngjae Cheong, Jhonghyun An"
