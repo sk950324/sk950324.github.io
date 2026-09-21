@@ -23,7 +23,7 @@ I am interested in building reliable perception systems that connect research wi
 - Multi-Task Learning
 - Robust Scene Understanding
 
-## Selected Projects
+## Projects
 
 {% assign selected_projects = site.data.projects | where: 'selected', true %}
 {% for project in selected_projects %}
@@ -36,7 +36,7 @@ I am interested in building reliable perception systems that connect research wi
 
 [View all projects]({{ '/projects/' | relative_url }})
 
-## Selected Publications
+## Publications
 
 {% assign selected_publications = site.publications | where: 'selected', true | sort: 'year' | reverse %}
 {% for publication in selected_publications %}
