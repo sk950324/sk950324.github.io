@@ -91,8 +91,7 @@ Role: Multi-Task Perception Model Development, Model Lightweighting, and On-devi
 
 ### Development of a Network for Determining Traversable Regions by Terrain
 
-**My participation: Sep.2024–Feb.2025**  
-Sponsor: National IT Industry Promotion Agency (NIPA), with Mobiltech & GINT  
+**My participation: Sep.2024–Feb.2025** | Mobiltech  
 Role: Traversability Perception, Knowledge Distillation, and Camera-Only Distance Estimation
 
 - Developed camera-only perception through LiDAR knowledge distillation, achieving **0.87 mIoU for semantic segmentation** and **0.91 mIoU for traversability classification**.

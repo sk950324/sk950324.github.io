@@ -67,12 +67,12 @@
   validation: Validated perception on 10,000 BDD100K images and 4,773 FMTC frames. Evaluated end-to-end improvements over three runs of 1,000 frames.
 
 - id: camera-only-traversability
-  image: /img/nipa.png
-  image_alt: National IT Industry Promotion Agency (NIPA) logo
+  image: /img/모빌테크.png
+  image_alt: Mobiltech logo
   title: Development of a Network for Determining Traversable Regions by Terrain
   period: Sep. 2024–Feb. 2025
   participation_period: Sep. 2024–Feb. 2025
-  organization: "Sponsor: National IT Industry Promotion Agency (NIPA), with Mobiltech & GINT"
+  organization: Industry-commissioned research for Mobiltech
   role: Traversability Perception, Knowledge Distillation, and Camera-Only Distance Estimation
   selected: false
   summary: Transfer LiDAR spatial knowledge into a camera-only model for agricultural terrain perception and distance estimation.
