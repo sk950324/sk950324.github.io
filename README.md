@@ -39,7 +39,7 @@ Docker 미리보기 설정도 포함했지만 이번 로컬 검증은 Ruby 실�
 | 프로젝트 내용과 대표 프로젝트 선택 | `_data/projects.yml` (`selected: true`이면 About에 표시) |
 | 프로젝트 상세 페이지 구성 | `_pages/projects.html` |
 | 웹 이력서 | `_pages/cv.md` |
-| PDF 이력서 | `utils/Choi_CV.pdf` |
+| PDF 이력서 | `utils/SeongkyuChoi_CV.pdf` |
 | 상단 메뉴 | `_data/navigation.yml` |
 | 논문 정보 | `_publications/*.md` |
 | 논문 목록 페이지 | `_pages/publications.html` |

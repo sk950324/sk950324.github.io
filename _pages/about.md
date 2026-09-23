@@ -12,7 +12,7 @@ Through industry-academic projects, I have worked on data collection and validat
 
 I am interested in building reliable perception systems that connect research with real-world deployment.
 
-[Download CV (PDF)]({{ '/utils/Choi_CV.pdf' | relative_url }}){: .btn .btn--primary}
+[Download CV (PDF)]({{ '/utils/SeongkyuChoi_CV.pdf' | relative_url }}){: .btn .btn--primary}
 [Google Scholar]({{ site.author.googlescholar }}){: .btn .btn--inverse}
 
 ## Research Interests

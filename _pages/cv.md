@@ -4,7 +4,7 @@ permalink: /cv/
 author_profile: true
 ---
 
-[Download full CV (PDF)]({{ '/utils/Choi_CV.pdf' | relative_url }}){: .btn .btn--primary}
+[Download full CV (PDF)]({{ '/utils/SeongkyuChoi_CV.pdf' | relative_url }}){: .btn .btn--primary}
 
 ## Education
 
