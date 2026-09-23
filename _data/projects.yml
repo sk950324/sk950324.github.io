@@ -5,8 +5,7 @@
 - id: wide-semantic-mapping
   image: /img/mse.png
   image_alt: Ministry of SMEs and Startups logo
-  title: Wide Semantic Mapping for Multi-Robot Systems
-  full_title: Development of Wide Semantic Map Building and Update Technology for Multi-Robot Systems in Unstructured Outdoor Environments
+  title: Development of Wide Semantic Map Building and Update Technology for Multi-Robot Systems in Unstructured Outdoor Environments
   period: "Project period: Apr. 2025–Mar. 2027"
   participation_period: Apr. 2025–Aug. 2026
   organization: National R&D project led by Mobiltech; funded by the Ministry of SMEs and Startups, Korea
@@ -25,7 +24,7 @@
 - id: rgb-thermal-detection
   image: /img/로템마크.png
   image_alt: Hyundai Rotem logo
-  title: RGB/Thermal Data Pipelines and Long-Range Small-Object Detection
+  title: Development of Intelligent Battlefield Situational Awareness AI Algorithms
   period: "Project period: Nov. 2024–Sep. 2026"
   participation_period: Nov. 2024–Aug. 2026
   organization: Industry-commissioned research for Hyundai Rotem
@@ -47,7 +46,7 @@
 - id: multi-task-perception
   image: /img/IITP.jpeg
   image_alt: Institute of Information & Communications Technology Planning & Evaluation (IITP) logo
-  title: Multi-Task Vehicle Perception and On-board Optimization
+  title: Development of an Automotive Software Platform for Software-Defined Vehicles (SDV) Integrated with an AI Framework Required for Intelligent Vehicles
   period: "Project period: Apr. 2024–Dec. 2027"
   participation_period: Apr. 2024–Aug. 2026
   organization: IITP national R&D project led by HL Mando
@@ -70,7 +69,7 @@
 - id: camera-only-traversability
   image: /img/nipa.png
   image_alt: National IT Industry Promotion Agency (NIPA) logo
-  title: Camera-Only Traversability Estimation via LiDAR Knowledge Distillation
+  title: Development of a Network for Determining Traversable Regions by Terrain
   period: Sep. 2024–Feb. 2025
   participation_period: Sep. 2024–Feb. 2025
   organization: "Sponsor: National IT Industry Promotion Agency (NIPA), with Mobiltech & GINT"
@@ -90,7 +89,7 @@
 - id: patrol-robot-perception
   image: /img/뉴빌리티.png
   image_alt: Neubility logo
-  title: YOLO–VLM Abnormal-Situation Recognition for Patrol Robots
+  title: Development of Camera-Based Patrol Cognitive Intelligence for Abnormal Situation Detection
   period: Nov. 2024–Mar. 2025
   participation_period: Nov. 2024–Mar. 2025
   organization: Industry-commissioned research for Neubility

@@ -58,7 +58,7 @@ Jun.2021–Mar.2023
 
 ## Projects
 
-### Wide Semantic Mapping for Multi-Robot Systems
+### Development of Wide Semantic Map Building and Update Technology for Multi-Robot Systems in Unstructured Outdoor Environments
 
 **My participation: Apr.2025–Aug.2026** | Mobiltech-led national R&D project  
 Funded by the Ministry of SMEs and Startups, Korea  
@@ -69,7 +69,7 @@ Role: Off-road Perception Model Development
 
 [View project details →]({{ '/projects/' | relative_url }}#wide-semantic-mapping)
 
-### RGB/Thermal Data Pipelines and Long-Range Small-Object Detection
+### Development of Intelligent Battlefield Situational Awareness AI Algorithms
 
 **My participation: Nov.2024–Aug.2026** | Hyundai Rotem  
 Role: RGB/Thermal Data Pipeline Development, Object Detection, and On-board Deployment
@@ -79,7 +79,7 @@ Role: RGB/Thermal Data Pipeline Development, Object Detection, and On-board Depl
 
 [View project details →]({{ '/projects/' | relative_url }}#rgb-thermal-detection)
 
-### Multi-Task Vehicle Perception and On-board Optimization
+### Development of an Automotive Software Platform for Software-Defined Vehicles (SDV) Integrated with an AI Framework Required for Intelligent Vehicles
 
 **My participation: Apr.2024–Aug.2026** | IITP national R&D project led by HL Mando  
 Role: Multi-Task Perception Model Development, Model Lightweighting, and On-device Validation
@@ -89,7 +89,7 @@ Role: Multi-Task Perception Model Development, Model Lightweighting, and On-devi
 
 [View project details →]({{ '/projects/' | relative_url }}#multi-task-perception)
 
-### Camera-Only Traversability Estimation via LiDAR Knowledge Distillation
+### Development of a Network for Determining Traversable Regions by Terrain
 
 **My participation: Sep.2024–Feb.2025**  
 Sponsor: National IT Industry Promotion Agency (NIPA), with Mobiltech & GINT  
@@ -100,7 +100,7 @@ Role: Traversability Perception, Knowledge Distillation, and Camera-Only Distanc
 
 [View project details →]({{ '/projects/' | relative_url }}#camera-only-traversability)
 
-### YOLO–VLM Abnormal-Situation Recognition for Patrol Robots
+### Development of Camera-Based Patrol Cognitive Intelligence for Abnormal Situation Detection
 
 **My participation: Nov.2024–Mar.2025** | Neubility  
 Role: Dataset Development, Object Detection, VLM Compression, and Robot Integration
